@@ -10,4 +10,6 @@
     <Folder Include="Views\List\" />
     <Folder Include="Views\Search\" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 </Project>
