@@ -4,18 +4,34 @@
     <h3>@ViewBag.jobs.Count Result(s)</h3>
 
     @{
-        //TODO #1: Use a loop to display job results in a table.
+        //TODO #1: DONE - Use a loop to display job results in a table.
     }
 
-    <table class="job-listing">
-        @foreach (var job in ViewBag.jobs)
-        {
-            <tr>@job.Id</tr>
-            <tr>@job.Name</tr>
 
-
-        }
-    </table>
+    @foreach (var job in ViewBag.jobs)
+    {
+        <table class="job-listing">
+            <tr>
+                <td>ID: @job.Id</td>
+            </tr>
+            <tr>
+                <td>Name: @job.Name</td>
+            </tr>
+            <tr>
+                <td>Employer: @job.Employer</td>
+            </tr>
+            <tr>
+                <td>Location: @job.Location</td>
+            </tr>
+            <tr>
+                <td>Position: @job.PositionType</td>
+            </tr>
+            <tr>
+                <td>Skills: @job.CoreCompetency</td>
+            </tr>
+        </table>
+            }
+        
 
 
     </div>
